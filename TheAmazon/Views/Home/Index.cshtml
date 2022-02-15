@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model BookViewModel
+
+<div class="text-center font-weight-bold row">
+    <div class="col-3"><img src="~/amzon.jpg" width="200" /></div>
+    <div class="col-6 justify-content-sm-center">
+    <h1 class="display-4">Welcome to the Amazon bookstore!</h1>
+    <p>Please browse our paginated selection of books.</p>
+    </div>
+    
+</div>
+
+<br />
+<br />
+<div class="row">
+    <div class=" mx-auto">
+        <h3 class="text-center">Available Books</h3>
+        @foreach (Book b in Model.Books)
+        {
+            <h6>@b.Title</h6>
+            <ul>
+
+                <li>Author: @b.Author</li>
+                <li>Published by @b.Publisher</li>
+                <li>ISBN @b.Isbn</li>
+                <li>@b.PageCount pages</li>
+                <li>Category: @b.Category</li>
+                <li>@b.Classification</li>
+                <li>$@b.Price</li>
+            </ul>
+        }
+    </div>
+</div>
+
+<div class="text-center" page-model="@Model.PageInfo" page-action="Index"></div>
