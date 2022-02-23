@@ -15,23 +15,20 @@
 <br />
 <br />
 <div class="row">
-    <div class=" mx-auto">
+    <div class="  col-lg-3 col-md-3">
+        <vc:types></vc:types>
+    </div>
+    <div class=" col-lg-9 col-md-9">
         <h3 class="text-center">Available Books</h3>
         @foreach (Book b in Model.Books)
         {
-            <h6>@b.Title</h6>
-            <ul>
-
-                <li>Author: @b.Author</li>
-                <li>Published by @b.Publisher</li>
-                <li>ISBN @b.Isbn</li>
-                <li>@b.PageCount pages</li>
-                <li>Category: @b.Category</li>
-                <li>@b.Classification</li>
-                <li>$@b.Price</li>
-            </ul>
+            <partial name="BookSummary" model="b" />
         }
     </div>
 </div>
 
-<div class="text-center" page-model="@Model.PageInfo" page-action="Index"></div>
+    <div class="btn-group float-left m-1 p-1" page-model="@Model.PageInfo" page-action="Index" page-class="btn" 
+         page-class-normal="btn-ouline-primary" page-class-selected="btn-primary" page-classes-enabled="true"></div>
+
+    <br />
+    <br />

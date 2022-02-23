@@ -27,19 +27,20 @@ namespace TheAmazon.Controllers
             repo = temp;
         }
 
-        public IActionResult Index(int pageNum = 1)
+        public IActionResult Index(string category, int pageNum = 1)
         {
             int resultsPerPage = 10;
 
             var x = new BookViewModel
             {
                 Books = repo.Books
+                .Where(p => p.Category == category || category == null)
                 .OrderBy(p => p.BookId)
                 .Skip((pageNum - 1) * resultsPerPage)
                 .Take(resultsPerPage),
                 PageInfo = new PageInfo
                 {
-                    TotalNumBooks = repo.Books.Count(),
+                    TotalNumBooks = (category == null? repo.Books.Count() : repo.Books.Where(x => x.Category == category).Count()),
                     BooksPerPage = resultsPerPage,
                     CurrentPage = pageNum
                 }
