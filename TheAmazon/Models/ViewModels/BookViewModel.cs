@@ -10,5 +10,7 @@ namespace TheAmazon.Models.ViewModels
         public IQueryable<Book> Books { get; set; }
         public PageInfo PageInfo { get; set; }
 
+        public Basket basket { get; set; }
+
     }
 }

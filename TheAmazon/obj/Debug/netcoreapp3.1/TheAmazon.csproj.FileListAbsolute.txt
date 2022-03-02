@@ -84,3 +84,6 @@ C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\Razor\Pa
 C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
 C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
 C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\Razor\Views\Shared\BookSummary.cshtml.g.cs
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\Razor\Views\Purchase\Checkout.cshtml.g.cs
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\Razor\Pages\Confirmation.cshtml.g.cs
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\Razor\Views\Shared\MiniCart.cshtml.g.cs

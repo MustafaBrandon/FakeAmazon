@@ -1,0 +1,16 @@
+﻿@page
+@model TheAmazon.Pages.ConfirmationModel
+@{
+}
+
+@using TheAmazon
+@using TheAmazon.Models
+@using TheAmazon.Models.ViewModels
+@using TheAmazon.Infrastructure
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, TheAmazon
+
+<div class="text-center">
+    <h2>Thank you for your order! Your books will arrive soon.</h2>
+    <a class="btn btn-primary" asp-controller="Home">Return Home</a>
+</div>

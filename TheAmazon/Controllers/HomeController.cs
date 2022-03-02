@@ -22,14 +22,18 @@ namespace TheAmazon.Controllers
         //    context = temp;
         //}
 
-        public HomeController(IBookstoreRepository temp)
+        public HomeController(IBookstoreRepository temp, Basket b)
         {
             repo = temp;
+            basket = b;
         }
+
+        public Basket basket { get; set; }
 
         public IActionResult Index(string category, int pageNum = 1)
         {
             int resultsPerPage = 10;
+
 
             var x = new BookViewModel
             {
@@ -40,10 +44,11 @@ namespace TheAmazon.Controllers
                 .Take(resultsPerPage),
                 PageInfo = new PageInfo
                 {
-                    TotalNumBooks = (category == null? repo.Books.Count() : repo.Books.Where(x => x.Category == category).Count()),
+                    TotalNumBooks = (category == null ? repo.Books.Count() : repo.Books.Where(x => x.Category == category).Count()),
                     BooksPerPage = resultsPerPage,
                     CurrentPage = pageNum
-                }
+                },
+                basket = basket
         };
             return View(x);
         }
