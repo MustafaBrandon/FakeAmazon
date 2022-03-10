@@ -1199,11 +1199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brand\\source\\repos\\TheAmazon\\Theamazon\\TheAmazon.csproj",
+      "projectUniqueName": "C:\\Users\\brand\\source\\repos\\TheAmazon\\TheAmazon\\TheAmazon.csproj",
       "projectName": "TheAmazon",
-      "projectPath": "C:\\Users\\brand\\source\\repos\\TheAmazon\\Theamazon\\TheAmazon.csproj",
+      "projectPath": "C:\\Users\\brand\\source\\repos\\TheAmazon\\TheAmazon\\TheAmazon.csproj",
       "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brand\\source\\repos\\TheAmazon\\Theamazon\\obj\\",
+      "outputPath": "C:\\Users\\brand\\source\\repos\\TheAmazon\\TheAmazon\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1271,7 +1271,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

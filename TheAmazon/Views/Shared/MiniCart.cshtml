@@ -5,6 +5,8 @@
 }
 @model SessionBasket
 
-<div class="card card-header-tabs">
-    <img src="~/cart.png" width="20"/> <p>My Cart: @Model.GetTotalQuantity() Items @(Model.CalculateTotal().ToString("c"))</p>
+<div class="card card-header-tabs" >
+    <a href="/Cart?ReturnUrl=%2F">
+        <img src="~/cart.png" width="20"  /> <p>My Cart: @Model.GetTotalQuantity() Items @(Model.CalculateTotal().ToString("c"))</p>
+    </a>
 </div>

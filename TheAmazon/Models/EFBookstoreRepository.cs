@@ -13,5 +13,22 @@ namespace TheAmazon.Models
             context = temp;
         }
         public IQueryable<Book> Books => context.Books;
+
+        public void SaveBook(Book b)
+        {
+            context.SaveChanges();
+        }
+
+        public void addBook(Book b)
+        {
+            context.Add(b);
+            context.SaveChanges();
+        }
+
+        public void deleteBook(Book b)
+        {
+            context.Remove(b);
+            context.SaveChanges();
+        }
     }
 }

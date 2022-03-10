@@ -9,18 +9,18 @@
 
 <div class="card m-1 p-1">
     <div class="bg-light p-1">
-        <h4>@Model.Title</h4>
-        <span class="badge badge-primary">@Model.Category</span>
+        <h4 class="fw-bold">@Model.Title</h4>
+        <span class="badge btn-secondary">@Model.Category</span>
     </div> 
     <ul>
 
-        <li>Author: @Model.Author</li>
+        <li class="fst-italic">Author: @Model.Author</li>
         <li>Published by @Model.Publisher</li>
         <li>ISBN @Model.Isbn</li>
         <li>@Model.PageCount pages</li>
         @*<li>Category: @Model.Category</li>*@
         <li>@Model.Classification</li>
-        <li>$@Model.Price</li>
+        <li class="text-danger">$@Model.Price</li>
     </ul>
     <form method="post" asp-page="/Cart">
         <input type="hidden" @*asp-for="BookId"*@ name="BookId" value="@Model.BookId" />
