@@ -63,7 +63,7 @@ using TheAmazon.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 53 "C:\Users\brand\source\repos\TheAmazon\TheAmazon\Pages\Admin\Books.razor"
+#line 58 "C:\Users\brand\source\repos\TheAmazon\TheAmazon\Pages\Admin\Books.razor"
        
 
     public IBookstoreRepository repo => Service;

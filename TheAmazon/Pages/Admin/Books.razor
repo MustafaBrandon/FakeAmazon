@@ -3,39 +3,38 @@
 
 @inherits OwningComponentBase<IBookstoreRepository>
 
+    <h3>Books</h3>
 
-<h3>Books</h3>
+    <table class="table table-sm bg-white table-bordered table-striped">
 
-<table class="table table-sm table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Book Title</th>
+                <th>Author</th>
 
-    <thead>
-        <tr>
-            <th>Book ID</th>
-            <th>Book Title</th>
-            <th>Author</th>
+            </tr>
+        </thead>
 
-        </tr>
-    </thead>
-
-    <tbody>
-        @if (BookData?.Count() > 0)
+        <tbody>
+            @if (BookData?.Count() > 0)
             {
                 @foreach (Book b in BookData)
                 {
-        <tr>
-            <td>@b.BookId</td>
-            <td>@b.Title</td>
-            <td>@b.Author</td>
-            <td>
-                <NavLink class="btn btn-info btn-sm" href="@GetDetailsUrl(b.BookId)">Details</NavLink>
-            </td>
-            <td>
-                <NavLink class="btn btn-info btn-sm" href="@GetEditUrl(b.BookId)">Edit</NavLink>
-            </td>
-            <td>
-                <button class=" btn btn-danger btn-sm" @onclick="@(x => RemoveBook(b))">Delete</button>
-            </td>
-        </tr>
+                    <tr>
+                        <td>@b.BookId</td>
+                        <td>@b.Title</td>
+                        <td>@b.Author</td>
+                        <td>
+                            <NavLink class="btn btn-info btn-sm" href="@GetDetailsUrl(b.BookId)">Details</NavLink>
+                        </td>
+                        <td>
+                            <NavLink class="btn btn-info btn-sm" href="@GetEditUrl(b.BookId)">Edit</NavLink>
+                        </td>
+                        <td>
+                            <button class=" btn btn-danger btn-sm" @onclick="@(x => RemoveBook(b))">Delete</button>
+                        </td>
+                    </tr>
                 }
             }
             else
@@ -44,11 +43,21 @@
                     <td colspan="5" class="text-center">No Books to show!</td>
                 </tr>
             }
-    </tbody>
+        </tbody>
 
-</table>
+    </table>
 
-<NavLink class="btn btn-primary" href="/admin/books/add">Add</NavLink>
+    <NavLink class="btn btn-primary text-center" href="/admin/books/add">Add</NavLink>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+<div class="align-bottom">
+    <br />
+</div>
+
 
 @code {
 

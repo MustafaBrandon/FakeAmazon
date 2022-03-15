@@ -107,3 +107,11 @@ C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\RazorDec
 C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Admin\Editor.razor.g.cs
 C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Details.razor.g.cs
 C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Editor.razor.g.cs
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\bin\Debug\netcoreapp3.1\Bookstore.sqlite
+C:\Users\brand\source\repos\TheAmazon\TheAmazon\bin\Debug\netcoreapp3.1\Identity.sqlite
